@@ -4,6 +4,7 @@ set( CMAKE_C_EXTENSIONS OFF )
 
 add_library( ${A7_LIB} )
 target_sources( ${A7_LIB} PRIVATE dgui.c )
+target_link_libraries( ${A7_LIB} PRIVATE SDL2::SDL2 )
 
 # Apache License 2.0
 # NO WARRANTY OF ANY KIND see <http://www.apache.org/licenses/LICENSE-2.0>
